@@ -1,3 +1,6 @@
+Here's a sample `README.md` file for your Express application:
+
+---
 
 # Notebook App
 
@@ -31,26 +34,22 @@ Make sure you have the following installed on your machine:
 ### Installation
 
 1. Clone this repository:
-
     ```bash
     git clone https://github.com/your-repo/notebook-app.git
     cd notebook-app
     ```
 
 2. Install the required dependencies:
-
     ```bash
     npm install
     ```
 
 3. Start MongoDB on your local machine:
-
     ```bash
     mongod
     ```
 
 4. Run the server:
-
     ```bash
     node app.js
     ```
@@ -59,7 +58,7 @@ Make sure you have the following installed on your machine:
 
 ### File Structure
 
-```bash
+```
 ├── models
 │   └── note.js          # Mongoose schema for notes
 ├── public               # Static files (CSS, JS, images)
@@ -96,3 +95,10 @@ The `note.js` model includes the following fields:
 - The app uses **method-override** to simulate `PUT` and `DELETE` HTTP requests since HTML forms only support `GET` and `POST`.
 - Ensure that MongoDB is running on `mongodb://127.0.0.1:27017/notebook`.
 
+### License
+
+This project is open-source and available under the MIT License.
+
+---
+
+This `README.md` provides a detailed overview of your project, including how to install, run, and use the application.
