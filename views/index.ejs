@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>All Notes</h3>
+        <div class="add-button-container">
+            <form method="get" action="/notes/new">
+                <div class="button__holder">
+                    <h2>Add</h2>
+                    <button class="plus"></button>
+                </div>            
+            </form>
+        </div> 
+        <%for(let note of notes){%>
+            <div class="note-card">
+                <p><b><%=note.title%></b></p>
+                <div class="notebox">
+                    <p><%=note.containt%></p>
+                </div>
+                <i class="date"><p><%=note.created_at.toString().split(" ")[4] %></p> 
+                    <p><%=note.created_at.toString().split(" ").slice(0,4).join(" ") %></p></i>
+                <div class="note-actions">
+                    <form method="get" action="/notes/<%=note._id%>/edit">
+                        <button class="edit-button">Edit</button>
+                    </form>
+                    <form method="post" action="/notes/<%=note._id%>?_method=DELETE">
+                        <button class="delete-button">Delete</button>
+                    </form>
+                </div>
+            </div>
+        <%}%>
+    </div>
+</body>
+</html>

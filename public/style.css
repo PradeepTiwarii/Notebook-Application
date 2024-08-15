@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #AFDDE5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* .add-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+
+
+.button__holder {
+    margin: auto;
+    width: 8em;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid wheat;
+    border-radius: 3px;
+    background-color: #003135;
+}
+
+.button__holder::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(26, 26, 26, 0.7);
+}
+
+.button__holder h2 {
+    margin-right: 1em;
+    text-align: center;
+    color: #DDD;
+}
+
+.plus {
+    position: relative;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    color: #1a1a1a;
+    background: #DDD;
+    border-radius: 50%;
+    border: none;
+    transition: box-shadow 400ms cubic-bezier(.2, 0, .7, 1), transform 200ms cubic-bezier(.2, 0, .7, 1);
+}
+
+.plus::after {
+    content: "+";
+    font-size: 2.5em;
+    line-height: 1.1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plus:hover {
+    transform: rotate(45deg);
+    box-shadow: 0 0 1px 15px rgba(219, 192, 111, 0.4),
+                0 0 1px 30px rgba(227, 222, 143, 0.1),
+                0 0 1px 45px rgba(231, 204, 160, 0.1);
+}
+
+
+.note-card {
+    background-color: #e3f4f6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.note-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.edit-button, .delete-button {
+    background-color: #024950;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-button {
+    background-color: #964734;
+}
+
+.edit-button:hover {
+    background-color: #007bb5;
+}
+
+.delete-button:hover {
+    background-color: #da190b;
+}
+
+.notebox{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.date p{
+    font-size: 12px;
+    margin: 5px;
+    margin-bottom: 1px;
+    padding: 0px;
+    display: inline;
+}

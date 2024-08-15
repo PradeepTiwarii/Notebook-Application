@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Note</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #AFDDE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div {
+    background-color: #e3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input.title, textarea.containt {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input.title:focus, textarea.containt:focus {
+    border-color: #007BFF;
+}
+
+textarea.containt {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0FA4AF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #024950;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <form method="post" action="/notes">
+            <h3>Add New Note</h3>
+            <input class="title" type="text" name="title" placeholder="Title">
+            <textarea class="containt" name="containt" placeholder="write here ..."></textarea>
+            <button>Save</button>
+        </form>
+    </div>
+</body>
+</html>
