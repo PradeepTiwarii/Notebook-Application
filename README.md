@@ -35,8 +35,8 @@ Make sure you have the following installed on your machine:
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/your-repo/notebook-app.git
-    cd notebook-app
+    git clone https://github.com/PradeepTiwarii/Notebook-Application.git
+    cd notebook-application
     ```
 
 2. Install the required dependencies:
